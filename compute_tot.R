@@ -11,8 +11,8 @@ compute_tot <- function(data_raw){
   }
   
   res_tot <- matrix(nrow = length(players), ncol = length(colnames(df))-2,
-                    dimnames = list(players, str_c("tot_", colnames(df)[-c(1,2)])))
-  colnames(res_tot)[c(6:8)] <- c("tot_OG","avg_raw", "avg_scores")
+                    dimnames = list(players,colnames(df)[-c(1,2)]))
+  colnames(res_tot)[c(7:8)] <- c("avg_raw", "avg_scores")
   
   for (p in players) {
     rif <- df[df$player == p, 3:10]
