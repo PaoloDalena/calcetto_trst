@@ -98,8 +98,8 @@ pre_proc <- function(data_raw, unlist = TRUE) {
       df_res_game$scores[df_res_game$won == "No"] <- df_res_game$scores[df_res_game$won == "No"] + 1 * abs(g1 - g2)
     }
     ## best/worst
-    df_res_game$scores <- df_res_game$scores + 5 * df_res_game$best
-    df_res_game$scores <- df_res_game$scores - 5 * df_res_game$worst
+    df_res_game$scores <- df_res_game$scores + 3 * df_res_game$best
+    df_res_game$scores <- df_res_game$scores - 3 * df_res_game$worst
 
     ## number of goals
     df_res_game$scores <- df_res_game$scores + 50 * df_res_game$goals / (g1 + g2)
