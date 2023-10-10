@@ -11,30 +11,61 @@ knitr::opts_chunk$set(
   fig.path = "man/figures/README-",
   out.width = "100%"
 )
-library(badger)
+library(magrittr)
 library(knitr)
 ```
 
-# calcetto_trst
+# calcetto_trst  <img src="logo.png" align="right" height="139" />
 
 ## Workflow
 
-Caricamento del dataset aggiornato:
+- Download del dataset aggiornato:
 
 ```{r, eval = F}
 df_calcetto <- update_dataset()
 ```
 
-Pre-processing del dataset:
+- Pre-processing del dataset:
 
-- creazione dataframe utilizzabile
-- fornire opzione standardizzazione voti (e secondo quale criterio)
+```{r, eval = F}
+res_calcetto <- pre_proc(df_calcetto) # default unlist = T
+```
 
-Creazione classifica per ogni partita:
+*Per info su come vengono calcolate gli score, fare riferimento a `pre_proc.R`*
 
-Creazione classifica generale:
+- Creazione risultati totali:
 
-Creazione classifica marcatori:
+```{r, eval = F}
+res_tot <- compute_tot(df_calcetto)
+```
 
+*Quando avremo abbastanza dati seguiranno funzioni per outputs tamarri (e.g. andamento degli scores nel tempo, classifica marcatori).*
+
+## Risultati
+
+Risultati ultima partita:
+
+```{r, eval = F, echo = F}
+df_calcetto <- update_dataset()
+res_calcetto <- pre_proc(df_calcetto, unlist = F)
+save(res_calcetto, file = "res_calcetto.rdata")
+```
+
+```{r, echo = F}
+load("res_calcetto.rdata")
+kable(res_calcetto$`05/10/2023 salesiani 5-4`, booktabs = T)
+```
+
+Risultati totali aggiornati al `r Sys.Date()`:
+
+```{r, eval = F, echo = F}
+res_tot <- compute_tot(update_dataset())
+save(res_tot, file = "res_tot.rdata")
+```
+
+```{r, echo = F}
+load("res_tot.rdata")
+kable(res_tot, booktabs = T)
+```
 
 
