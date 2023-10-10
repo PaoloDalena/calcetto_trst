@@ -17,7 +17,7 @@ df_calcetto <- update_dataset()
 res_calcetto <- pre_proc(df_calcetto) # default unlist = T
 ```
 
-*Per info su come vengono calcolate gli score, fare riferimento a
+*Per info su come vengono calcolati gli score, fare riferimento a
 `pre_proc.R`*
 
 - Creazione risultati totali:
