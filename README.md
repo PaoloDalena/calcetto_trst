@@ -51,18 +51,18 @@ Risultati ultima partita:
 
 Risultati totali aggiornati al 2023-10-10:
 
-|                            | tot_played | tot_won | tot_best | tot_worst | tot_goals | tot_OG | avg_raw | avg_scores |
-|:---------------------------|-----------:|--------:|---------:|----------:|----------:|-------:|--------:|-----------:|
-| Umbe                       |          1 |       0 |        0 |         1 |         2 |      0 |    5.29 |      92.62 |
-| Scavide                    |          1 |       1 |        4 |         0 |         2 |      0 |    8.14 |     154.14 |
-| Gio santacat               |          1 |       1 |        1 |         0 |         1 |      0 |    6.29 |     110.27 |
-| Giova pecci                |          0 |       0 |        0 |         0 |         0 |      0 |     NaN |        NaN |
-| Paolo                      |          1 |       1 |        1 |         0 |         1 |      0 |    7.29 |     123.66 |
-| Leo                        |          1 |       0 |        0 |         0 |         1 |      0 |    6.86 |     115.26 |
-| Idris                      |          1 |       0 |        2 |         0 |         0 |      0 |    7.38 |     123.90 |
-| FranzJack                  |          1 |       0 |        0 |         3 |         0 |      0 |    4.57 |      64.59 |
-| Fedo                       |          1 |       1 |        0 |         0 |         0 |      0 |    6.12 |      97.32 |
-| Lollo Napoli               |          1 |       0 |        0 |         1 |         0 |      0 |    5.29 |      79.51 |
-| Nunzio Luca Pennella (NLP) |          0 |       0 |        0 |         0 |         0 |      0 |     NaN |        NaN |
-| Andrea Mekk 10             |          1 |       1 |        0 |         1 |         1 |      0 |    6.00 |      97.29 |
-| Pearson                    |          0 |       0 |        0 |         0 |         0 |      0 |     NaN |        NaN |
+|                            | played | won | best | worst | goals | owngoals | avg_raw | avg_scores |
+|:---------------------------|-------:|----:|-----:|------:|------:|---------:|--------:|-----------:|
+| Umbe                       |      1 |   0 |    0 |     1 |     2 |        0 |    5.29 |      92.62 |
+| Scavide                    |      1 |   1 |    4 |     0 |     2 |        0 |    8.14 |     154.14 |
+| Gio santacat               |      1 |   1 |    1 |     0 |     1 |        0 |    6.29 |     110.27 |
+| Giova pecci                |      0 |   0 |    0 |     0 |     0 |        0 |     NaN |        NaN |
+| Paolo                      |      1 |   1 |    1 |     0 |     1 |        0 |    7.29 |     123.66 |
+| Leo                        |      1 |   0 |    0 |     0 |     1 |        0 |    6.86 |     115.26 |
+| Idris                      |      1 |   0 |    2 |     0 |     0 |        0 |    7.38 |     123.90 |
+| FranzJack                  |      1 |   0 |    0 |     3 |     0 |        0 |    4.57 |      64.59 |
+| Fedo                       |      1 |   1 |    0 |     0 |     0 |        0 |    6.12 |      97.32 |
+| Lollo Napoli               |      1 |   0 |    0 |     1 |     0 |        0 |    5.29 |      79.51 |
+| Nunzio Luca Pennella (NLP) |      0 |   0 |    0 |     0 |     0 |        0 |     NaN |        NaN |
+| Andrea Mekk 10             |      1 |   1 |    0 |     1 |     1 |        0 |    6.00 |      97.29 |
+| Pearson                    |      0 |   0 |    0 |     0 |     0 |        0 |     NaN |        NaN |
