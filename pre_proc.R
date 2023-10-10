@@ -14,7 +14,7 @@ pre_proc <- function(data_raw, unlist = TRUE) {
   n_games <- length(games)
   df_res_tot <- data.frame("game" = rep(games, each = 13), "player" = rep(players, n_games))
   res <- list()
-  
+
   # add each column in the results dataset considering each game separately
   for (i in games) {
     df_raw_game <- df[df$game == i, ]
@@ -57,7 +57,7 @@ pre_proc <- function(data_raw, unlist = TRUE) {
     # goals
     df_res_game$goals <- 0
     for (p in df_res_game$player[df_res_game$played == "Yes"]) {
-      df_res_game$goals[df_res_game$player == p] <- na.omit(df_raw_game[str_detect(c(df_raw_game[,p])[[1]], "sei"), 32])
+      df_res_game$goals[df_res_game$player == p] <- na.omit(df_raw_game[str_detect(c(df_raw_game[, p])[[1]], "sei"), 32])
     }
     df_res_game$goals <- as.numeric(df_res_game$goals)
     df_res_game$goals[is.na(df_res_game$goals)] <- 0
@@ -65,11 +65,13 @@ pre_proc <- function(data_raw, unlist = TRUE) {
     # own goal
     df_res_game$owngoals <- "No"
     for (p in df_res_game$player[df_res_game$played == "Yes"]) {
-      df_res_game$owngoals[df_res_game$player == p] <- na.omit(df_raw_game[str_detect(c(df_raw_game[,p])[[1]], "sei"), 33])
+      df_res_game$owngoals[df_res_game$player == p] <- na.omit(df_raw_game[str_detect(c(df_raw_game[, p])[[1]], "sei"), 33])
     }
+    df_res_game$owngoals[!unlist(lapply(df_res_game$owngoals, length))] <- "No"
+    df_res_game$owngoals <- unlist(df_res_game$owngoals)
 
     # raw_scores
-    scores <- df_raw_game[,18:30]
+    scores <- df_raw_game[, 18:30]
     names(scores) <- unlist(str_extract_all(names(scores), "(?<=\\[).+?(?=\\])"))
     scores <- as.matrix(scores)
     scores <- scores[, df_res_game$player[df_res_game$played == "Yes"]]
@@ -80,8 +82,8 @@ pre_proc <- function(data_raw, unlist = TRUE) {
     df_res_game <- dplyr::full_join(df_res_game, rwsc, by = "player")
 
     # scores
-    s1 <- mscores/rowMeans(mscores,na.rm = T)
-    s2 <- colMeans(m1, na.rm = T)*100
+    s1 <- mscores / rowMeans(mscores, na.rm = T)
+    s2 <- colMeans(m1, na.rm = T) * 100
     s2 <- data.frame("scores" = s2, "player" = colnames(mscores))
     df_res_game <- dplyr::full_join(df_res_game, s2, by = "player")
 
@@ -89,29 +91,30 @@ pre_proc <- function(data_raw, unlist = TRUE) {
     g2 <- as.numeric(rev(str_extract_all(i, "(\\d)+")[[1]])[2])
 
     ## won/lost
-    if(g1 == g2){
+    if (g1 == g2) {
       message(paste0("No winning/losing bonus added for", i))
-    }else{
-        df_res_game$scores[df_res_game$won == "Yes"] <- df_res_game$scores[df_res_game$won == "Yes"] + 1*abs(g1-g2)
-        df_res_game$scores[df_res_game$won == "No"] <- df_res_game$scores[df_res_game$won == "No"] + 1*abs(g1-g2)
+    } else {
+      df_res_game$scores[df_res_game$won == "Yes"] <- df_res_game$scores[df_res_game$won == "Yes"] + 1 * abs(g1 - g2)
+      df_res_game$scores[df_res_game$won == "No"] <- df_res_game$scores[df_res_game$won == "No"] + 1 * abs(g1 - g2)
     }
     ## best/worst
-    df_res_game$scores <- df_res_game$scores + 5*df_res_game$best
-    df_res_game$scores <- df_res_game$scores - 5*df_res_game$worst
+    df_res_game$scores <- df_res_game$scores + 5 * df_res_game$best
+    df_res_game$scores <- df_res_game$scores - 5 * df_res_game$worst
 
     ## number of goals
-    df_res_game$scores <- df_res_game$scores + 50*df_res_game$goals/(g1*g2)
-    # owngoal
+    df_res_game$scores <- df_res_game$scores + 50 * df_res_game$goals / (g1 + g2)
+    # own goal
     df_res_game$scores[df_res_game$owngoals == "Yes"] <- df_res_game$scores[df_res_game$owngoals == "Yes"] - 5
-    
+
     res[[i]] <- df_res_game
   }
-  if(unlist && length(games)>=2){
+  if (unlist && length(games) >= 2) {
     unlisted <- res[[1]]
-    for(i in 2:length(games)){
+    for (i in 2:length(games)) {
       unlisted <- rbind(unlisted, res[[i]])
     }
     return(unlisted)
-  }else{return(res)}
+  } else {
+    return(res)
+  }
 }
-
