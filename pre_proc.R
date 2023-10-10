@@ -96,7 +96,7 @@ pre_proc <- function(data_raw, unlist = TRUE) {
       message(paste0("No winning/losing bonus added for", i))
     } else {
       df_res_game$scores[df_res_game$won == "Yes"] <- df_res_game$scores[df_res_game$won == "Yes"] + 1 * abs(g1 - g2)
-      df_res_game$scores[df_res_game$won == "No"] <- df_res_game$scores[df_res_game$won == "No"] + 1 * abs(g1 - g2)
+      df_res_game$scores[df_res_game$won == "No"] <- df_res_game$scores[df_res_game$won == "No"] - 1 * abs(g1 - g2)
     }
     ## best/worst
     df_res_game$scores <- df_res_game$scores + 3 * df_res_game$best
