@@ -43,7 +43,7 @@ res_tot <- compute_tot(df_calcetto)
 
 ## Risultati
 
-Risultati ultima partita:
+- Risultati ultime 3 partite:
 
 ```{r, eval = F, echo = F}
 df_calcetto <- update_dataset()
@@ -53,10 +53,12 @@ save(res_calcetto, file = "res_calcetto.rdata")
 
 ```{r, echo = F}
 load("res_calcetto.rdata")
+kable(res_calcetto$`12/10/2023 salesiani 4-1`, booktabs = T)
+kable(res_calcetto$`12/10/2023 salesiani 4-0`, booktabs = T)
 kable(res_calcetto$`05/10/2023 salesiani 5-4`, booktabs = T)
 ```
 
-Risultati totali aggiornati al `r Sys.Date()`:
+- Risultati **totali** aggiornati al `r Sys.Date()`:
 
 ```{r, eval = F, echo = F}
 res_tot <- compute_tot(update_dataset())
@@ -68,4 +70,4 @@ load("res_tot.rdata")
 kable(res_tot, booktabs = T)
 ```
 
-
+- Plot super-tamarri [qui](https://sgeremia.shinyapps.io/calcetto_app/) - **special thanks to Sara!**
