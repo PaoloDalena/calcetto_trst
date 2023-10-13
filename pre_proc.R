@@ -84,7 +84,7 @@ pre_proc <- function(data_raw, unlist = TRUE) {
 
     # scores
     s1 <- mscores / rowMeans(mscores, na.rm = T)
-    s2 <- colMeans(m1, na.rm = T) * 100
+    s2 <- colMeans(s1, na.rm = T) * 100
     s2 <- data.frame("scores" = s2, "player" = colnames(mscores))
     df_res_game <- dplyr::full_join(df_res_game, s2, by = "player")
 
