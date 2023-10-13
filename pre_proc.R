@@ -76,7 +76,7 @@ pre_proc <- function(data_raw, unlist = TRUE) {
     scores <- as.matrix(scores)
     scores <- scores[, df_res_game$player[df_res_game$played == "Yes"]]
     scores[scores == "Sono io"] <- NA
-    mscores <- matrix(as.numeric(scores), ncol = 10)
+    mscores <- matrix(as.numeric(scores), ncol = dim(scores)[2])
     colnames(mscores) <- colnames(scores)
     rwsc <- data.frame("raw_scores" = colMeans(mscores, na.rm = T), "player" = colnames(mscores))
     df_res_game <- dplyr::full_join(df_res_game, rwsc, by = "player")
