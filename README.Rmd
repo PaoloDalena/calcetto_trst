@@ -53,6 +53,7 @@ save(res_calcetto, file = "res_calcetto.rdata")
 
 ```{r, echo = F}
 load("res_calcetto.rdata")
+library(knitr)
 kable(res_calcetto$`12/10/2023 salesiani 4-1`, booktabs = T)
 kable(res_calcetto$`12/10/2023 salesiani 4-0`, booktabs = T)
 kable(res_calcetto$`05/10/2023 salesiani 5-4`, booktabs = T)
@@ -71,3 +72,10 @@ kable(res_tot, booktabs = T)
 ```
 
 - Plot super-tamarri [qui](https://sgeremia.shinyapps.io/calcetto_app/) - **special thanks to Sara!**
+
+```{r, include = F, eval = F}
+# create rdata for web app
+tmp <- pre_proc(update_dataset(), unlist = T)
+save(tmp, file = "calcetto.rdata")
+```
+
