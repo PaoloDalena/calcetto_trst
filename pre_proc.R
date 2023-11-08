@@ -3,6 +3,9 @@
 pre_proc <- function(data_raw, unlist = TRUE) {
   df <- data_raw
   names(df)[3] <- "game"
+  df$game[df$game == "05/10/2023 salesiani 5-4"] <- "05/10/2023 5-4"
+  df$game[df$game == "12/10/2023 salesiani 4-0"] <- "12/10/2023 4-0"
+  df$game[df$game == "12/10/2023 salesiani 4-1"] <- "12/10/2023 4-1"
   df$game <- as.factor(df$game)
   games <- levels(df$game)
 
