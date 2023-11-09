@@ -43,7 +43,7 @@ res_tot <- compute_tot(df_calcetto)
 
 ## Risultati
 
-- Risultati ultime 3 partite:
+- Risultati ultime 2 partite:
 
 ```{r, eval = F, echo = F}
 df_calcetto <- update_dataset()
@@ -54,9 +54,8 @@ save(res_calcetto, file = "res_calcetto.rdata")
 ```{r, echo = F}
 load("res_calcetto.rdata")
 library(knitr)
+kable(res_calcetto$`07/11/2023 12-7`, booktabs = T)
 kable(res_calcetto$`18/10/2023 8-5`, booktabs = T)
-kable(res_calcetto$`12/10/2023 salesiani 4-1`, booktabs = T)
-kable(res_calcetto$`12/10/2023 salesiani 4-0`, booktabs = T)
 ```
 
 - Risultati **totali** aggiornati al `r Sys.Date()`:
