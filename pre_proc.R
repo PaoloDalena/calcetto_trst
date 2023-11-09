@@ -109,7 +109,7 @@ pre_proc <- function(data_raw, unlist = TRUE) {
     df_res_game$scores <- df_res_game$scores + 50 * df_res_game$goals / (g1 + g2)
     
     # own goal
-    df_res_game$scores[df_res_game$owngoals == "Yes"] <- df_res_game$scores[df_res_game$owngoals == "Yes"] - 5
+    df_res_game$scores[df_res_game$owngoals == "Si"] <- df_res_game$scores[df_res_game$owngoals == "Si"] - 5
     
     df_res_game$scores <- round(df_res_game$scores, 2)
 

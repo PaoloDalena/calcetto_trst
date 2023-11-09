@@ -22,7 +22,7 @@ compute_tot <- function(data_raw){
       sum(rif[,3]),
       sum(rif[,4]),
       sum(rif[,5]),
-      sum(rif[,6] == "Yes"),
+      sum(rif[,6] == "Si"),
       round(mean(rif[,7], na.rm = T), 2),
       round(mean(rif[,8], na.rm = T), 2)
     )
