@@ -54,8 +54,8 @@ save(res_calcetto, file = "res_calcetto.rdata")
 ```{r, echo = F}
 load("res_calcetto.rdata")
 library(knitr)
+kable(res_calcetto$`17/11/2023 16-10`, booktabs = T)
 kable(res_calcetto$`13/11/2023 12-5`, booktabs = T)
-kable(res_calcetto$`07/11/2023 12-7`, booktabs = T)
 ```
 
 - Risultati **totali** aggiornati al `r Sys.Date()`:

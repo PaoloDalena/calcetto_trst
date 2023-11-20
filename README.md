@@ -33,55 +33,57 @@ res_tot <- compute_tot(df_calcetto)
 
 - Risultati ultime 2 partite:
 
+| game             | player                     | played | won | best | worst | goals | owngoals | raw_scores | scores |
+|:-----------------|:---------------------------|:-------|:----|-----:|------:|------:|:---------|-----------:|-------:|
+| 17/11/2023 16-10 | Umbe                       | No     | No  |    0 |     0 |     0 | No       |         NA |     NA |
+| 17/11/2023 16-10 | Scavide                    | Yes    | Yes |    1 |     0 |     2 | No       |       7.12 | 122.56 |
+| 17/11/2023 16-10 | Gio santacat               | No     | No  |    0 |     0 |     0 | No       |         NA |     NA |
+| 17/11/2023 16-10 | Giova pecci                | Yes    | No  |    0 |     0 |     0 | No       |       5.29 |  77.35 |
+| 17/11/2023 16-10 | Paolo                      | Yes    | No  |    0 |     0 |     4 | No       |       7.00 | 108.18 |
+| 17/11/2023 16-10 | Leo                        | No     | No  |    0 |     0 |     0 | No       |         NA |     NA |
+| 17/11/2023 16-10 | Idris                      | No     | No  |    0 |     0 |     0 | No       |         NA |     NA |
+| 17/11/2023 16-10 | FranzJack                  | Yes    | No  |    0 |     0 |     0 | No       |       4.50 |  64.74 |
+| 17/11/2023 16-10 | Fedo                       | No     | No  |    0 |     0 |     0 | No       |         NA |     NA |
+| 17/11/2023 16-10 | Lollo Napoli               | Yes    | Yes |    0 |     0 |     5 | No       |       6.62 | 118.40 |
+| 17/11/2023 16-10 | Nunzio Luca Pennella (NLP) | Yes    | No  |    3 |     0 |     6 | No       |       8.12 | 140.76 |
+| 17/11/2023 16-10 | Andrea Mekk 10             | Yes    | Yes |    0 |     0 |     2 | No       |       6.78 | 114.20 |
+| 17/11/2023 16-10 | Pearson                    | Yes    | No  |    0 |     7 |     0 | No       |       4.00 |  35.55 |
+| 17/11/2023 16-10 | Santelli                   | Yes    | Yes |    5 |     0 |     6 | No       |       8.50 | 163.72 |
+
 | game            | player                     | played | won | best | worst | goals | owngoals | raw_scores | scores |
 |:----------------|:---------------------------|:-------|:----|-----:|------:|------:|:---------|-----------:|-------:|
-| 13/11/2023 12-5 | Umbe                       | Yes    | No  |    0 |     0 |     3 | No       |       6.57 | 104.03 |
-| 13/11/2023 12-5 | Scavide                    | Yes    | No  |    0 |     0 |     1 | No       |       5.57 |  83.36 |
-| 13/11/2023 12-5 | Gio santacat               | Yes    | Yes |    0 |     0 |     2 | No       |       7.00 | 125.22 |
+| 13/11/2023 12-5 | Umbe                       | Yes    | No  |    0 |     0 |     3 | No       |       6.62 | 104.72 |
+| 13/11/2023 12-5 | Scavide                    | Yes    | No  |    0 |     1 |     1 | No       |       5.50 |  79.05 |
+| 13/11/2023 12-5 | Gio santacat               | Yes    | Yes |    0 |     0 |     2 | No       |       6.75 | 120.79 |
 | 13/11/2023 12-5 | Giova pecci                | No     | No  |    0 |     0 |     0 | No       |         NA |     NA |
 | 13/11/2023 12-5 | Paolo                      | No     | No  |    0 |     0 |     0 | No       |         NA |     NA |
-| 13/11/2023 12-5 | Leo                        | Yes    | No  |    1 |     1 |     0 | No       |       5.62 |  81.73 |
+| 13/11/2023 12-5 | Leo                        | Yes    | No  |    1 |     1 |     1 | No       |       5.62 |  84.67 |
 | 13/11/2023 12-5 | Idris                      | No     | No  |    0 |     0 |     0 | No       |         NA |     NA |
-| 13/11/2023 12-5 | FranzJack                  | Yes    | No  |    0 |     4 |     0 | No       |       4.29 |  50.65 |
+| 13/11/2023 12-5 | FranzJack                  | Yes    | No  |    0 |     4 |     0 | No       |       4.38 |  51.56 |
 | 13/11/2023 12-5 | Fedo                       | No     | No  |    0 |     0 |     0 | No       |         NA |     NA |
-| 13/11/2023 12-5 | Lollo Napoli               | Yes    | Yes |    1 |     0 |     2 | No       |       6.57 | 118.82 |
-| 13/11/2023 12-5 | Nunzio Luca Pennella (NLP) | Yes    | Yes |    5 |     0 |     4 | No       |       8.14 | 163.70 |
-| 13/11/2023 12-5 | Andrea Mekk 10             | Yes    | Yes |    0 |     0 |     0 | No       |       6.25 | 106.14 |
-| 13/11/2023 12-5 | Pearson                    | Yes    | Yes |    0 |     0 |     3 | No       |       6.86 | 125.20 |
+| 13/11/2023 12-5 | Lollo Napoli               | Yes    | Yes |    1 |     0 |     2 | No       |       6.50 | 117.49 |
+| 13/11/2023 12-5 | Nunzio Luca Pennella (NLP) | Yes    | Yes |    5 |     0 |     4 | No       |       8.12 | 162.84 |
+| 13/11/2023 12-5 | Andrea Mekk 10             | Yes    | Yes |    1 |     0 |     0 | No       |       6.44 | 111.80 |
+| 13/11/2023 12-5 | Pearson                    | Yes    | Yes |    0 |     0 |     3 | No       |       7.00 | 126.91 |
+| 13/11/2023 12-5 | Santelli                   | No     | No  |    0 |     0 |     0 | No       |         NA |     NA |
 
-| game            | player                     | played | won | best | worst | goals | owngoals | raw_scores | scores |
-|:----------------|:---------------------------|:-------|:----|-----:|------:|------:|:---------|-----------:|-------:|
-| 07/11/2023 12-7 | Umbe                       | Yes    | No  |    0 |     1 |     0 | No       |       5.29 |  77.01 |
-| 07/11/2023 12-7 | Scavide                    | No     | No  |    0 |     0 |     0 | No       |         NA |     NA |
-| 07/11/2023 12-7 | Gio santacat               | Yes    | Yes |    4 |     0 |     0 | No       |       8.00 | 147.05 |
-| 07/11/2023 12-7 | Giova pecci                | No     | No  |    0 |     0 |     0 | No       |         NA |     NA |
-| 07/11/2023 12-7 | Paolo                      | Yes    | No  |    0 |     0 |     2 | No       |       6.00 |  96.54 |
-| 07/11/2023 12-7 | Leo                        | No     | No  |    0 |     0 |     0 | No       |         NA |     NA |
-| 07/11/2023 12-7 | Idris                      | No     | No  |    0 |     0 |     0 | No       |         NA |     NA |
-| 07/11/2023 12-7 | FranzJack                  | Yes    | No  |    0 |     3 |     0 | Si       |       4.75 |  59.36 |
-| 07/11/2023 12-7 | Fedo                       | No     | No  |    0 |     0 |     0 | No       |         NA |     NA |
-| 07/11/2023 12-7 | Lollo Napoli               | Yes    | Yes |    0 |     0 |     2 | No       |       6.25 | 110.94 |
-| 07/11/2023 12-7 | Nunzio Luca Pennella (NLP) | Yes    | No  |    0 |     0 |     3 | No       |       7.12 | 119.05 |
-| 07/11/2023 12-7 | Andrea Mekk 10             | Yes    | Yes |    0 |     0 |     0 | No       |       6.44 | 109.79 |
-| 07/11/2023 12-7 | Pearson                    | Yes    | No  |    0 |     1 |     2 | No       |       5.14 |  81.51 |
-
-- Risultati **totali** aggiornati al 2023-11-14:
+- Risultati **totali** aggiornati al 2023-11-20:
 
 |                            | played | won | best | worst | goals | owngoals | avg_raw | avg_scores |
 |:---------------------------|-------:|----:|-----:|------:|------:|---------:|--------:|-----------:|
-| Umbe                       |      6 |   0 |    0 |     2 |     9 |        0 |    5.93 |      96.74 |
-| Scavide                    |      5 |   1 |    4 |     0 |     3 |        0 |    6.42 |     105.61 |
-| Gio santacat               |      4 |   3 |    5 |     0 |     3 |        0 |    6.85 |     119.17 |
-| Giova pecci                |      0 |   0 |    0 |     0 |     0 |        0 |     NaN |        NaN |
-| Paolo                      |      5 |   2 |    1 |     0 |     5 |        0 |    6.42 |     109.61 |
-| Leo                        |      4 |   0 |    1 |     3 |     1 |        0 |    5.74 |      88.14 |
+| Umbe                       |      6 |   0 |    0 |     2 |     9 |        0 |    5.94 |      96.85 |
+| Scavide                    |      6 |   2 |    5 |     1 |     5 |        0 |    6.52 |     107.72 |
+| Gio santacat               |      4 |   3 |    5 |     0 |     3 |        0 |    6.79 |     118.06 |
+| Giova pecci                |      1 |   0 |    0 |     0 |     0 |        0 |    5.29 |      77.35 |
+| Paolo                      |      6 |   2 |    1 |     0 |     9 |        0 |    6.51 |     109.37 |
+| Leo                        |      4 |   0 |    1 |     3 |     2 |        0 |    5.74 |      88.87 |
 | Idris                      |      4 |   1 |    2 |     4 |     2 |        0 |    6.18 |      98.51 |
-| FranzJack                  |      4 |   0 |    0 |    13 |     1 |        1 |    4.84 |      64.56 |
+| FranzJack                  |      5 |   0 |    0 |    13 |     1 |        1 |    4.79 |      64.77 |
 | Fedo                       |      3 |   3 |    0 |     0 |     0 |        0 |    6.23 |     104.01 |
-| Lollo Napoli               |      3 |   2 |    1 |     1 |     4 |        0 |    6.04 |     102.42 |
-| Nunzio Luca Pennella (NLP) |      5 |   4 |   14 |     0 |    11 |        0 |    7.70 |     143.17 |
-| Andrea Mekk 10             |      6 |   5 |    0 |     4 |     2 |        0 |    6.10 |     100.88 |
-| Pearson                    |      3 |   2 |    0 |     3 |     6 |        1 |    5.67 |      94.45 |
+| Lollo Napoli               |      4 |   3 |    1 |     1 |     9 |        0 |    6.16 |     106.09 |
+| Nunzio Luca Pennella (NLP) |      6 |   4 |   17 |     0 |    17 |        0 |    7.77 |     142.62 |
+| Andrea Mekk 10             |      7 |   6 |    1 |     4 |     4 |        0 |    6.22 |     103.59 |
+| Pearson                    |      4 |   2 |    0 |    10 |     6 |        1 |    5.28 |      80.15 |
 
 - Plot super-tamarri
   [qui](https://sgeremia.shinyapps.io/calcetto_app/) - **special thanks
