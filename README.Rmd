@@ -70,7 +70,7 @@ load("res_tot.rdata")
 kable(res_tot, booktabs = T)
 ```
 
-- Plot super-tamarri [qui](https://sgeremia.shinyapps.io/calcetto_app/) - **special thanks to Sara!**
+- Plot super-tamarri [qui](https://paolodalena.shinyapps.io/calcetto_app/) - **special thanks to Sara!**
 
 ```{r, include = F, eval = F}
 # create rdata for web app

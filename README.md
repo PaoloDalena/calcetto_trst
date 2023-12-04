@@ -86,5 +86,5 @@ res_tot <- compute_tot(df_calcetto)
 | Pearson                    |      5 |   3 |    0 |    13 |     7 |        1 |    5.09 |      77.28 |
 
 - Plot super-tamarri
-  [qui](https://sgeremia.shinyapps.io/calcetto_app/) - **special thanks
-  to Sara!**
+  [qui](https://paolodalena.shinyapps.io/calcetto_app/) - **special
+  thanks to Sara!**
