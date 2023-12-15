@@ -13,6 +13,9 @@ knitr::opts_chunk$set(
 )
 library(magrittr)
 library(knitr)
+source("update_dataset.R")
+source("pre_proc.R")
+source("compute_tot.R")
 ```
 
 # calcetto_trst  <img src="logo.png" align="right" height="139" />
@@ -54,8 +57,8 @@ save(res_calcetto, file = "res_calcetto.rdata")
 ```{r, echo = F}
 load("res_calcetto.rdata")
 library(knitr)
+kable(res_calcetto$`14/12/2023 11-6`, booktabs = T)
 kable(res_calcetto$`06/12/2023 5-3`, booktabs = T)
-kable(res_calcetto$`29/11/2023 8-5`, booktabs = T)
 ```
 
 - Risultati **totali** aggiornati al `r Sys.Date()`:
