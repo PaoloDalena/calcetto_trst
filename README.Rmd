@@ -61,6 +61,8 @@ kable(res_calcetto$`24/01/2024 3-3`, booktabs = T)
 kable(res_calcetto$`16/01/2024 14-12`, booktabs = T)
 ```
 
+- Se vuoi vedere i risultati di tutte le partite disputate fino ad oggi, [qui](docs/all_games.md) puoi trovare la lista esaustiva dei risultati di tutte le partite!
+
 - Risultati **totali** aggiornati al `r Sys.Date()`:
 
 ```{r, eval = F, echo = F}

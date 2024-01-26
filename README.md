@@ -73,6 +73,10 @@ res_tot <- compute_tot(df_calcetto)
 | 16/01/2024 14-12 | Lollo Cavana               | Yes    | No  |    0 |     0 |     2 | No       |       6.00 |  93.10 |
 | 16/01/2024 14-12 | Tom Fonda GK               | No     | No  |    0 |     0 |     0 | No       |         NA |     NA |
 
+- Se vuoi vedere i risultati di tutte le partite disputate fino ad oggi,
+  [qui](docs/all_games.md) puoi trovare la lista esaustiva dei risultati
+  di tutte le partite!
+
 - Risultati **totali** aggiornati al 2024-01-26:
 
 |                            | played | won | best | worst | goals | owngoals | avg_raw | avg_scores |
