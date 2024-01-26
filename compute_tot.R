@@ -2,7 +2,7 @@
 # funzione per il calcolo dei risultati totali
 compute_tot <- function(data_raw){
   library(stringr)
-  players <- str_extract_all(names(data_raw)[c(4:16,34, 36, 39)], "(?<=\\[).+?(?=\\])")
+  players <- str_extract_all(names(data_raw)[c(4:16,34, 36, 39, 40)], "(?<=\\[).+?(?=\\])")
   players <- unlist(players)
   
   df <- pre_proc(data_raw, unlist = T)
