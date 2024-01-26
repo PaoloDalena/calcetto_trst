@@ -1,0 +1,41 @@
+---
+output: html_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# All games - interactive table
+
+Here you can filter by the match or player you are interested in and also sort the results according to different variables, otherwise below you can find the exhaustive list of all matches.
+
+```{r, eval = T, echo = F, message = F}
+library(knitr)
+library(here)
+load(here("res_calcetto.rdata"))
+
+DT::datatable(data.table::rbindlist(res_calcetto))
+```
+
+# All games - list
+
+```{r, eval = T, results = "asis", echo = F, message = F}
+library(knitr)
+library(here)
+load(here("res_calcetto.rdata"))
+for(i in 1:length(res_calcetto)){
+  cat(paste0("**", names(res_calcetto[i]), "**"))
+  print(kable(res_calcetto[[i]], booktabs = T))
+  cat("\n")
+}
+```
+
+
