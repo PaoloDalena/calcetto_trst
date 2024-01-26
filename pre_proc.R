@@ -11,11 +11,11 @@ pre_proc <- function(data_raw, unlist = TRUE) {
 
   # create the dataframe with all the games to store the results
   library(stringr)
-  players <- str_extract_all(names(df)[c(4:16,34, 36, 39)], "(?<=\\[).+?(?=\\])")
+  players <- str_extract_all(names(df)[c(4:16,34, 36, 39, 40)], "(?<=\\[).+?(?=\\])")
   players <- unlist(players)
 
   n_games <- length(games)
-  df_res_tot <- data.frame("game" = rep(games, each = 16), "player" = rep(players, n_games))
+  df_res_tot <- data.frame("game" = rep(games, each = 17), "player" = rep(players, n_games))
   res <- list()
 
   # add each column in the results dataset considering each game separately
@@ -23,7 +23,7 @@ pre_proc <- function(data_raw, unlist = TRUE) {
     df_raw_game <- df[df$game == i, ]
     df_res_game <- df_res_tot[df_res_tot$game == i, ]
     n_ans <- dim(df_raw_game)[1]
-    names(df_raw_game)[c(4:17, 34, 36, 39)] <- unlist(str_extract_all(names(df)[c(4:17, 34, 36, 39)], "(?<=\\[).+?(?=\\])"))
+    names(df_raw_game)[c(4:17, 34, 36, 39, 40)] <- unlist(str_extract_all(names(df)[c(4:17, 34, 36, 39, 40)], "(?<=\\[).+?(?=\\])"))
 
     # game played
     df_res_game$played <- "Yes"
@@ -74,7 +74,7 @@ pre_proc <- function(data_raw, unlist = TRUE) {
     df_res_game$owngoals <- unlist(df_res_game$owngoals)
 
     # raw_scores
-    scores <- df_raw_game[, c(18:30, 35, 37, 38)]
+    scores <- df_raw_game[, c(18:30, 35, 37, 38, 41)]
     names(scores) <- unlist(str_extract_all(names(scores), "(?<=\\[).+?(?=\\])"))
     scores <- as.matrix(scores)
     scores <- scores[, df_res_game$player[df_res_game$played == "Yes"]]
