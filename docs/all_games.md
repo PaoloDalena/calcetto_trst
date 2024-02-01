@@ -6999,3 +6999,586 @@ NA
 </tr>
 </tbody>
 </table>
+———31/01/2024 5-3———
+<table class="table" style="font-size: 12px; width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+game
+</th>
+<th style="text-align:left;">
+player
+</th>
+<th style="text-align:left;">
+played
+</th>
+<th style="text-align:left;">
+won
+</th>
+<th style="text-align:right;">
+best
+</th>
+<th style="text-align:right;">
+worst
+</th>
+<th style="text-align:right;">
+goals
+</th>
+<th style="text-align:left;">
+owngoals
+</th>
+<th style="text-align:right;">
+raw_scores
+</th>
+<th style="text-align:right;">
+scores
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+31/01/2024 5-3
+</td>
+<td style="text-align:left;">
+Umbe
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+Si
+</td>
+<td style="text-align:right;">
+7.29
+</td>
+<td style="text-align:right;">
+119.82
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+31/01/2024 5-3
+</td>
+<td style="text-align:left;">
+Scavide
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:right;">
+7.14
+</td>
+<td style="text-align:right;">
+103.99
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+31/01/2024 5-3
+</td>
+<td style="text-align:left;">
+Gio santacat
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:right;">
+6.86
+</td>
+<td style="text-align:right;">
+110.18
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+31/01/2024 5-3
+</td>
+<td style="text-align:left;">
+Giova pecci
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:right;">
+7.14
+</td>
+<td style="text-align:right;">
+108.35
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+31/01/2024 5-3
+</td>
+<td style="text-align:left;">
+Paolo
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:right;">
+6.86
+</td>
+<td style="text-align:right;">
+99.53
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+31/01/2024 5-3
+</td>
+<td style="text-align:left;">
+Leo
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+31/01/2024 5-3
+</td>
+<td style="text-align:left;">
+Idris
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+31/01/2024 5-3
+</td>
+<td style="text-align:left;">
+FranzJack
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:right;">
+5.00
+</td>
+<td style="text-align:right;">
+67.03
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+31/01/2024 5-3
+</td>
+<td style="text-align:left;">
+Fedo
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+31/01/2024 5-3
+</td>
+<td style="text-align:left;">
+Lollo Napoli
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+31/01/2024 5-3
+</td>
+<td style="text-align:left;">
+Nunzio Luca Pennella (NLP)
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+31/01/2024 5-3
+</td>
+<td style="text-align:left;">
+Andrea Mekk 10
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:right;">
+6.50
+</td>
+<td style="text-align:right;">
+98.57
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+31/01/2024 5-3
+</td>
+<td style="text-align:left;">
+Pearson
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:right;">
+5.29
+</td>
+<td style="text-align:right;">
+76.05
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+31/01/2024 5-3
+</td>
+<td style="text-align:left;">
+Santelli
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+31/01/2024 5-3
+</td>
+<td style="text-align:left;">
+Ric
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+31/01/2024 5-3
+</td>
+<td style="text-align:left;">
+Lollo Cavana
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+31/01/2024 5-3
+</td>
+<td style="text-align:left;">
+Tom Fonda GK
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:right;">
+8.57
+</td>
+<td style="text-align:right;">
+147.98
+</td>
+</tr>
+</tbody>
+</table>

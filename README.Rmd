@@ -46,7 +46,7 @@ res_tot <- compute_tot(df_calcetto)
 
 ## Risultati
 
-- Risultati ultime 2 partite:
+- Risultati ultima partita:
 
 ```{r, eval = F, echo = F}
 df_calcetto <- update_dataset()
@@ -57,8 +57,7 @@ save(res_calcetto, file = "res_calcetto.rdata")
 ```{r, echo = F}
 load("res_calcetto.rdata")
 library(knitr)
-kable(res_calcetto$`24/01/2024 3-3`, booktabs = T)
-kable(res_calcetto$`16/01/2024 14-12`, booktabs = T)
+kable(res_calcetto$`31/01/2024 5-3`, booktabs = T)
 ```
 
 - Se vuoi vedere i risultati di tutte le partite disputate fino ad oggi, [qui](docs/all_games.md) puoi trovare la lista esaustiva dei risultati di tutte le partite!
